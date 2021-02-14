@@ -3,15 +3,10 @@
 $a = 5;
 $b = 3;
 
-if ($a >= $b) {
+if ($a > $b) {
     echo $a;
-}
-
-echo '<hr>';
-
-$a = 2;
-$b = 2;
-
-if ($a === $b) {
+} elseif ($a < $b) {
+    echo $b;
+} else {
     echo '入力された値は等しいです';
 }
